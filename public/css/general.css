@@ -1,0 +1,75 @@
+/** Typography **/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap');
+
+/** Colors **/
+:root {
+  --dark-navy: rgb(26, 42, 51);
+  --semi-dark-navy: rgb(31, 54, 65);
+  --silver: rgb(168, 191, 201);
+  --silver-hover: rgb(219, 232, 237);
+  --light-blue: rgb(49, 195, 189);
+  --light-blue-hover: rgb(101, 233, 228);
+  --light-yellow: rgb(242, 177, 55);
+  --light-yellow-hover: rgb(255, 200, 96);
+}
+
+/** Default Desktop Version **/
+html {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--dark-navy);
+  display: flex;
+  font-family: 'Outfit', sans-serif;
+  justify-content: center;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--silver);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1.25px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: var(--silver);
+  font-size: 14;  
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.875px;
+}
+
+button {
+  color: var(--dark-navy);
+  border: none;
+  font-family: 'Outfit', sans-serif;
+}
