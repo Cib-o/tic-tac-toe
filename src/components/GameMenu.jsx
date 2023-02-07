@@ -3,15 +3,26 @@ import React from "react";
 function GameMenu() {
   return (
     <div>
-      {/* <!-- New game menu start --> */}
+      <img src="./assets/logo.svg" alt="logo"></img>
 
-      Pick player 1's mark
-      Remember: X goes first
+      <div className="container">
+        <h4>Pick player 1's mark</h4>
 
-      New Game (vs CPU)
-      New Game (vs player)
+        <div className="x-and-o">
+          <div className="x-unselected">
+            <img src="./assets/icon-x.svg" alt="icon-x"></img>
+          </div>
 
-      {/* <!-- New game menu end --> */}
+          <div className="o-selected">
+            <img src="./assets/icon-o.svg" alt="icon-o"></img>
+          </div>
+        </div>
+
+        <p>Remember: X goes first</p>
+      </div>
+
+      <button className="p1-vs-cpu">New Game (vs CPU)</button>
+      <button className="p1-vs-p2">New Game (vs player)</button>
     </div>
   );
 }
