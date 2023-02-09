@@ -1,0 +1,122 @@
+.game-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 448px;
+}
+
+.game-menu img {
+  width: 100px;
+}
+
+.container {
+  align-items: center;
+  background-color: var(--semi-dark-navy);
+  box-shadow: inset 0px -8px 0px rgb(16, 33, 33);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 205px;
+  width: 460px;
+}
+
+.x-and-o {
+  align-items: center;
+  background-color: var(--dark-navy);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  height: 72px;
+  width: 412px;
+}
+
+.x-selected,
+.o-selected {
+  align-items: center;
+  background-color: var(--silver);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  height: 54px;
+  width: 198px;
+}
+
+.x-unselected,
+.o-unselected {
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 54px;
+  width: 198px;
+}
+
+.x-unselected:hover,
+.o-unselected:hover {
+  background-color: rgba(168, 191, 201, 0.05);
+}
+
+.x-unselected img,
+.x-selected img,
+.o-unselected img,
+.o-selected img {
+  width: 32px;
+}
+
+.x-unselected img {
+  content: url(../assets/icon-x-unselected.svg);
+}
+
+.x-selected img {
+  filter: brightness(30%) contrast(120%);
+}
+
+.o-selected img {
+  content: url(../assets/icon-o-selected.svg);
+}
+
+.o-unselected img {
+  content: url(../assets/icon-o.svg);
+  filter: grayscale(100%);
+}
+
+.game-menu p {
+  margin-top: 20px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.p1-vs-cpu,
+.p1-vs-p2 {
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  letter-spacing: 1.25px;
+  line-height: 25px;
+  height: 67px;
+  width: 460px;
+}
+
+.p1-vs-cpu {
+  background-color: var(--light-yellow);
+  box-shadow: inset 0px -8px 0px #CC8B13;
+}
+
+.p1-vs-cpu:hover {
+  background-color: var(--light-yellow-hover);
+}
+
+.p1-vs-p2 {
+  background-color: var(--light-blue);
+  box-shadow: inset 0px -8px 0px #118C87;
+}
+
+.p1-vs-p2:hover {
+  background-color: var(--light-blue-hover);
+}
