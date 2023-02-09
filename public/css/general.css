@@ -62,7 +62,7 @@ h4 {
 
 p {
   color: var(--silver);
-  font-size: 14;  
+  font-size: 14px;  
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 0.875px;
