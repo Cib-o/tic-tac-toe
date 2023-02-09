@@ -2,7 +2,7 @@ import React from "react";
 
 function GameMenu() {
   return (
-    <div>
+    <div className="game-menu">
       <img src="./assets/logo.svg" alt="logo"></img>
 
       <div className="container">
