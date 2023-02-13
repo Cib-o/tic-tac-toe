@@ -62,6 +62,7 @@
 .x-selected img,
 .o-unselected img,
 .o-selected img {
+  pointer-events: none;
   width: 32px;
 }
 
