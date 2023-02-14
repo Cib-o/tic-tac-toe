@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import GameMenu from "./GameMenu";
 
 function App() {
-  return <GameMenu />;
+  const [data, setData] = useState({
+    gameMode: "",
+    mark: "O",
+  });
+
+  return (
+    <GameMenu
+      onData={(handleData) => {
+        setData(handleData);
+      }}
+    />
+  );
 }
 
 export default App;
