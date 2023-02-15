@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function GameMenu(props) {
   const [gameMenuData, setGameMenuData] = useState({
-    gameMode: "",
+    gameMode: false,
     mark: "O",
   });
 
