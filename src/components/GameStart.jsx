@@ -2,29 +2,44 @@ import React from "react";
 
 function GameStart(props) {
   return (
-    <div>
-      {/* <!-- Game board start --> */}
+    <div className="game-start">
+      <div className="top-section">
+        <img src="./assets/logo.svg" alt="logo"></img>
+        <div className="x-o-turn">
+          <img src="./assets/icon-x-unselected.svg" alt="icon-x" />
+          <h4>Turn</h4>
+        </div>
+        <button className="restart-button"><img src="./assets/icon-restart.svg" alt="icon-restart" /></button>
+      </div>
 
-      {/* <!-- x/o icon --> */} turn
+      <div className="middle-section">
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+      </div>
 
-      X (You) {/*  <!-- Your score --> */}
-      Ties {/*  <!-- Ties score --> */}
-      X (CPU) {/* <!-- CPU score --> */}
+      <div className="bottom-section">
+        <div className="x-score">
+          <p>X (You)</p>
+          <h2>0</h2>
+        </div>
 
-      Oh no, you lost
-      You won!
-      Player {/* <!-- 1/2 -->*/} wins!
+        <div className="ties-score">
+          <p>Ties</p>
+          <h2>0</h2>
+        </div>
 
-      {/*<!-- x/o icon -->*/} takes the round
-      Round tied
-      Restart game?
-
-      Quit
-      Next round
-      No, cancel
-      Yes, restart
-
-      {/*<!-- Game board end -->*/}
+        <div className="o-score">
+          <p>O (CPU)</p>
+          <h2>0</h2>
+        </div>
+      </div>
     </div>
   );
 }
