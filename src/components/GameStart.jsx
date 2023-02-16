@@ -1,6 +1,6 @@
 import React from "react";
 
-function GameStart() {
+function GameStart(props) {
   return (
     <div>
       {/* <!-- Game board start --> */}
