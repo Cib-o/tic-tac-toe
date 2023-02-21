@@ -190,10 +190,27 @@
   width: 140px;
 }
 
-.box:hover::after {
-  content: var(--x-o-outline);
+.box:hover::after,
+.selected-box-x:hover::after,
+.selected-box-x::after,
+.selected-box-o:hover::after,
+.selected-box-o::after {
   height: 64px;
   width: 64px;
+}
+
+.box:hover::after {
+  content: var(--x-o-outline);
+}
+
+.selected-box-x:hover::after,
+.selected-box-x::after {
+  content: url(../assets/icon-x.svg);
+}
+
+.selected-box-o:hover::after,
+.selected-box-o::after {
+  content: url(../assets/icon-o.svg);
 }
 
 .bottom-section {

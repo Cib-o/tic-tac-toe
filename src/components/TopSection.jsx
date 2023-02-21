@@ -5,7 +5,7 @@ function TopSection(props) {
     <div className="top-section">
       <img src="./assets/logo.svg" alt="logo"></img>
       <div className="x-o-turn">
-        <img src="./assets/icon-x-unselected.svg" alt="icon-x" />
+        <img src={props.turn === "X" ? "./assets/icon-x-unselected.svg" : "./assets/icon-o.svg"} alt="icon-x" />
         <h4>Turn</h4>
       </div>
       <button className="restart-button">
