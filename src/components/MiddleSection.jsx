@@ -3,8 +3,61 @@ import React, { useEffect, useState } from "react";
 function MiddleSection(props) {
   const [turn, setTurn] = useState("X");
   const [cells, setCells] = useState(Array(9).fill(""));
+  const [winner, setWinner] = useState();
+  const [boxId, setBoxId] = useState();
 
   useEffect(() => props.onData(turn));
+  useEffect(() => {
+    if(!boxId) return;
+
+    const firstBox = document.getElementById("box" + boxId[0]);
+    const secondBox = document.getElementById("box" + boxId[1]);
+    const thirdBox = document.getElementById("box" + boxId[2]);
+
+    firstBox.classList.add(`winner-${winner.toLowerCase()}-box`);
+    secondBox.classList.add(`winner-${winner.toLowerCase()}-box`);
+    thirdBox.classList.add(`winner-${winner.toLowerCase()}-box`);
+  });
+
+  const checkForWinner = (squares) => {
+    let combos = {
+      across: [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+      ],
+      down: [
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+      ],
+      diagonal: [
+        [0, 4, 8],
+        [2, 4, 6],
+      ],
+    };
+
+    for (let combo in combos) {
+      combos[combo].forEach((pattern) => {
+        if (
+          squares[pattern[0]] === "" ||
+          squares[pattern[1]] === "" ||
+          squares[pattern[2]] === ""
+        ) {
+        } else if (
+          squares[pattern[0]] === squares[pattern[1]] &&
+          squares[pattern[1]] === squares[pattern[2]]
+        ) {
+          setBoxId([
+            pattern[0],
+            pattern[1],
+            pattern[2]
+          ]);
+          setWinner(squares[pattern[0]]);
+        }
+      });
+    }
+  };
 
   const handleClick = (id) => {
     if (cells[id] !== "") return;
@@ -28,6 +81,7 @@ function MiddleSection(props) {
       setTurn("X");
     }
 
+    checkForWinner(squares);
     setCells(squares);
   };
 

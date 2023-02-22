@@ -190,6 +190,24 @@
   width: 140px;
 }
 
+.winner-x-box {
+  background-color: var(--light-blue);
+  box-shadow: inset 0px -8px 0px rgb(37, 152, 149);
+}
+
+.winner-x-box::after {
+  filter: brightness(30%) contrast(120%);
+}
+
+.winner-o-box {
+  background-color: var(--light-yellow);
+  box-shadow: inset 0px -8px 0px rgb(195, 141, 42);
+}
+
+.winner-o-box::after {
+  filter: brightness(30%) contrast(120%);
+}
+
 .box:hover::after,
 .selected-box-x:hover::after,
 .selected-box-x::after,
