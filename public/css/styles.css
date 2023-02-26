@@ -132,6 +132,7 @@
   width: 460px;
 }
 
+/* Top Section */
 .top-section {
   align-items: center;
   display: flex;
@@ -169,6 +170,7 @@
   background-color: var(--silver-hover);
 }
 
+/* Middle Section */
 .middle-section {
   column-gap: 20px;
   display: grid;
@@ -231,6 +233,7 @@
   content: url(../assets/icon-o.svg);
 }
 
+/* Bottom Section */
 .bottom-section {
   align-items: center;
   display: flex;
@@ -270,4 +273,371 @@
   color: var(--dark-navy);
   margin: 0;
   text-transform: uppercase;
+}
+
+/* Game End Style */
+.game-end {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.game-end div {
+  align-items: center;
+  background-color: var(--semi-dark-navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 266px;
+  width: 100%;
+}
+
+.game-end div h4 {
+  margin: 10px;
+}
+
+.game-end div h1 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+
+.game-end div h1 img {
+  margin-right: 24px;
+}
+
+.game-end div div {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.quit-button {
+  background-color: var(--silver);
+  box-shadow: inset 0px -4px 0px rgb(104, 137, 151);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  height: 52px;
+  width: 76px;
+}
+
+.quit-button:hover {
+  background-color: var(--silver-hover);
+  box-shadow: inset 0px -4px 0px rgb(124, 162, 180);
+}
+
+.next-round-button {
+  background-color: var(--light-yellow);
+  box-shadow: inset 0px -4px 0px #CC8B13;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  height: 52px;
+  width: 146px;
+}
+
+.next-round-button:hover {
+  background-color: var(--light-yellow-hover);
+  box-shadow: inset 0px -4px 0px #e69d16;
+}
+
+/* Game Restart Style */
+.game-restart {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.game-restart div {
+  align-items: center;
+  background-color: var(--semi-dark-navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 266px;
+  width: 100%;
+}
+
+.game-restart div h1 {
+  margin: 20px;
+}
+
+.game-restart div div {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.disagree-button {
+  background-color: var(--silver);
+  box-shadow: inset 0px -4px 0px #6B8997;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  height: 52px;
+  width: 140px;
+}
+
+.disagree-button:hover {
+  background-color: var(--silver-hover);
+  box-shadow: inset 0px -4px 0px rgb(124, 162, 180);
+}
+
+.agree-button {
+  background-color: var(--light-yellow);
+  box-shadow: inset 0px -4px 0px #CC8B13;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  height: 52px;
+  width: 152px;
+}
+
+.agree-button:hover {
+  background-color: var(--light-yellow-hover);
+  box-shadow: inset 0px -4px 0px #e69d16;
+}
+
+/** Tablet Version **/
+@media (max-width: 490px) {
+  /* Game Menu Style*/
+  .game-menu {
+    height: 438px;
+  }
+
+  .game-menu img {
+    width: 76px;
+  }
+
+  .container {
+    height: 195px;
+    width: 340px;
+  }
+
+  .x-and-o {
+    height: 64px;
+    width: 300px;
+  }
+
+  .x-selected,
+  .o-selected {
+    height: 48px;
+    width: 140px;
+  }
+
+  .x-unselected,
+  .o-unselected {
+    height: 54px;
+    width: 140px;
+  }
+
+  .x-unselected img,
+  .x-selected img,
+  .o-unselected img,
+  .o-selected img {
+    width: 28px;
+  }
+
+  .p1-vs-cpu,
+  .p1-vs-p2 {
+    height: 60px;
+    width: 340px;
+  }
+
+  /* Game Start Style */
+  .game-start {
+    height: 100%;
+    width: 350px;
+  }
+
+  /* Top Section */
+  .x-o-turn {
+    height: 44px;
+    width: 120px;
+  }
+
+  .x-o-turn img {
+    width: 20px;
+  }
+
+  .restart-button {
+    height: 46px;
+    width: 48px;
+  }
+
+  /* Middle Section */
+  .middle-section {
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .box {
+    height: 110px;
+    width: 100%;
+  }
+
+  /* Bottom Section */
+  .x-score,
+  .ties-score,
+  .o-score {
+    height: 58px;
+    width: 90px;
+  }
+
+  /* Game End Style */
+  .game-end div {
+    height: 228px;
+  }
+
+  .game-end div h4 {
+    margin: 6px;
+    font-size: 14px;
+  }
+
+  .game-end div h1 {
+    font-size: 24px;
+    margin: 6px;
+  }
+
+  .game-end div h1 img {
+    margin-right: 14px;
+    width: 32px;
+  }
+
+  /* Game Restart Style */
+  .game-restart div {
+    height: 228px;
+  }
+
+  .game-restart div h1 {
+    font-size: 24px;
+    margin: 10px;
+  }
+}
+
+/** Mobile Version **/
+@media (max-width: 360px) {
+  /* Game Menu Style*/
+  .game-menu img {
+    width: 66px;
+  }
+
+  .container {
+    height: 175px;
+    width: 320px;
+  }
+
+  .x-and-o {
+    height: 44px;
+    width: 260px;
+  }
+
+  .x-selected,
+  .o-selected {
+    height: 30px;
+    width: 120px;
+  }
+
+  .x-unselected,
+  .o-unselected {
+    height: 30px;
+    width: 120px;
+  }
+
+  .x-unselected img,
+  .x-selected img,
+  .o-unselected img,
+  .o-selected img {
+    width: 22px;
+  }
+
+  .p1-vs-cpu,
+  .p1-vs-p2 {
+    height: 52px;
+    width: 320px;
+  }
+
+  /* Game Start Style */
+  .game-start {
+    width: 320px;
+  }
+
+  /* Middle Section */
+  .middle-section {
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+
+  .box {
+    height: 100px;
+  }
+
+  /* Bottom Section */
+  .x-score,
+  .ties-score,
+  .o-score {
+    height: 50px;
+    width: 80px;
+  }
+
+  /* Game End Style */
+  .game-end div {
+    height: 208px;
+  }
+
+  .game-end div h4 {
+    margin: 4px;
+  }
+
+  .game-end div h1 {
+    margin: 4px;
+  }
+
+  .game-end div h1 img {
+    margin-right: 10px;
+    width: 30px;
+  }
+
+  /* Game Restart Style */
+  .game-restart div {
+    height: 208px;
+  }
+
+  .game-restart div h1 {
+    font-size: 24px;
+    margin: 6px;
+  }  
 }

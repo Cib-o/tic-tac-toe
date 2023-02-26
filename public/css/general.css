@@ -73,3 +73,17 @@ button {
   border: none;
   font-family: 'Outfit', sans-serif;
 }
+
+/** Tablet Version **/
+@media (max-width: 490px) {
+  body {
+    height: 98%;
+  }
+}
+
+/** Mobile Version **/
+@media (max-width: 360px) {
+  body {
+    height: 98%;
+  }
+}

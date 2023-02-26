@@ -5,7 +5,7 @@ import GameStart from "./GameStart";
 function App() {
   const [data, setData] = useState({
     gameMode: false,
-    mark: "O",
+    mark: "X",
   });
 
   return !data.gameMode ? (
@@ -15,7 +15,17 @@ function App() {
       }}
     />
   ) : (
-    <GameStart data={data}/>
+    <GameStart
+      data={data}
+      onData={(handleData) => {
+        if (handleData) {
+          setData({
+            gameMode: false,
+            mark: "X",
+          });
+        }
+      }}
+    />
   );
 }
 
